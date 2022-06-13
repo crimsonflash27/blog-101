@@ -128,8 +128,9 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>The beauty of data science lies in the fact that it can be utilised to solve problems in a wide variety of fields.</strong> And, if you do have some domain-specific knowledge , you can find that it opens up a wide variety of options that can be taken to solve the problem at hand.</p>
-<p>My problem lies in the field of biology, and involves dealing with protein sequences. It is a well-known fact that we have multitudes of protein sequence data available. The basics of biology will tell you that the activity of any protein is dependent not just on its amino acid sequence, but also factors like the way its backbone is designed; the way it folds in 3-D space; the way proteins units bind together, etc. So, the challenge lies in being able to manipulate only the sequence data – primary structure , in biological jargon - of proteins in order to build models to solve problems in the field. 
-The work that follows is a continuation of an already published work titled , “A machine learning approach for reliable prediction of amino acid interactions and its application in the directed evolution of enantioselective enzymes”, which deals with using only the sequence data to predict a biological parameter called the enantioselectivity value.</p>
+<p>My problem lies in the field of biology, and involves dealing with protein sequences. It is a well-known fact that we have multitudes of protein sequence data available. The basics of biology will tell you that the activity of any protein is dependent not just on its amino acid sequence, but also factors like the way its backbone is designed; the way it folds in 3-D space; the way proteins units bind together, etc. 
+So, the challenge lies in being able to manipulate only the sequence data – primary structure , in biological jargon - of proteins in order to build models to solve problems in the field.</p>
+<p>The work that follows is a continuation of an already published work titled , “A machine learning approach for reliable prediction of amino acid interactions and its application in the directed evolution of enantioselective enzymes”, which deals with using only the sequence data to predict a biological parameter called the enantioselectivity value.</p>
 <blockquote><p><strong>Literature Summary</strong></p>
 </blockquote>
 <p>The paper discusses a methodology for predicting a property – in this case, the enantioselectivity - of the input protein based on just using its primary sequence. 
@@ -140,18 +141,25 @@ So, let’s get started!</p>
 <blockquote><p><strong>The primary steps involved are as follows:</strong></p>
 <ol>
 <li>Converting the alphabetical amino-acid sequences into a sequence consisting of their respective amino acid indexes. </li>
-<li>Using Fourier Transform to obtain information embedded in the converted sequences. This will serve as one of the inputs, with the other being the non-Fourier transformed sequence. </li>
-<li>Using these as input in different Machine Learning models , hoping to capture a relationship between the inputs and the value we are trying to predict- The E-value.
-<strong>Data Modelling:</strong>
+</ol>
+</blockquote>
+<ol>
+<li><p>Using Fourier Transform to obtain information embedded in the converted sequences. This will serve as one of the inputs, with the other being the non-Fourier transformed sequence.</p>
+</li>
+<li><p>Using these as input in different Machine Learning models , hoping to capture a relationship between the inputs and the value we are trying to predict- The E-value.</p>
+<blockquote><p><strong>Data Modelling:</strong>
 A very vital step of any Machine Learning project involves converting the raw inputs into a form suitable for interpretation by a ML algorithm. This step is especially crucial, as the representation of the input will majorly impact the performance of the model.
 <strong>Amino Acid Indexes:</strong> 
 The first step involves converting the alphabetical sequences of the inputs into a numerical form which is suitable for use in a machine learning model. For this purpose, we are going to use amino acid indexes. Amino Acid indexes are numerical quantities we assign to each amino acid based on the physical or chemical characteristic we are dealing with ( AAindex: Amino Acid index database ). In this project, I will be trying a variety of AA indexes and comparing their performance in each modelling scenario.
 <strong>Machine Learning Models:</strong>
-It should be obvious that the task at hand requires us to predict a continuous value , making this a regression problem. Keeping this is mind , we will focus on the performance of 2 ML regression models:</li>
-<li>Linear Regression – Closed Form</li>
-<li>Support Vector Regression</li>
-</ol>
+It should be obvious that the task at hand requires us to predict a continuous value , making this a regression problem. Keeping this is mind , we will focus on the performance of 2 ML regression models:</p>
 </blockquote>
+</li>
+<li><p>Linear Regression – Closed Form</p>
+</li>
+<li><p>Support Vector Regression</p>
+</li>
+</ol>
 <p>Before we go into the results , I want to talk about an interesting concept in science called “Epistasis”. Epistasis occurs when the mutation at a certain point in the gene is affected by a mutation at another site. As you will all see, the dataset we are dealing with consists of different mutants ( single and multi-point ) of epoxide hydrolase from Aspergillus Niger (ANEH). Hence , the model we design must be able to account for the epistatic interactions that may occur when we have multiple mutant samples. This is especially important when we want to predict the enantioselectivity unknown mutants, which may have multiple mutations at different sites.</p>
 <blockquote><p><strong>Dataset:</strong>
 Set 1:  1 Wild-Type + 9 single point mutants of ANEH 
