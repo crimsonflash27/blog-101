@@ -129,18 +129,18 @@ window.onload = wrap_img;
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Before getting into the actual project, I would like to thank Jahnavi Hunsigida for being a wonderful research partner on the project; and Dr.Sumohana Channappayya of IIT Hyderabad, for giving me an opportunity to work on this project under his mentorship.</strong></p>
 <p><strong>The beauty of data science lies in the fact that it can be utilised to solve problems in a wide variety of fields.</strong> And, if you do have some domain-specific knowledge , you can find that it opens up a wide variety of options that can be taken to solve the problem at hand.</p>
-<p>My problem lies in the field of biology, and involves dealing with protein sequences. It is a well-known fact that we have multitudes of protein sequence data available. The basics of biology will tell you that the activity of any protein is dependent not just on its amino acid sequence, but also factors like the way its backbone is designed; the way it folds in 3-D space; the way proteins units bind together, etc. 
+<p>My problem lies in the field of biology, and involves dealing with protein sequences. It is a well-known fact that we have multitudes of protein sequence data available. The basics of biology will tell you that the activity of any protein is dependent not just on its amino acid sequence, but also factors like the way its backbone is designed; the way it folds in 3-D space; the way protein units bind together, etc. 
 So, the challenge lies in being able to manipulate only the sequence data – primary structure , in biological jargon - of proteins in order to build models to solve problems in the field.</p>
-<p>The work that follows is a continuation of an already published work titled , “A machine learning approach for reliable prediction of amino acid interactions and its application in the directed evolution of enantioselective enzymes”, which deals with using only the sequence data to predict a biological parameter called the enantioselectivity value.</p>
+<p>The work that follows is a continuation of an already published literature titled , “A machine learning approach for reliable prediction of amino acid interactions and its application in the directed evolution of enantioselective enzymes”, which deals with using only the sequence data to predict a biological parameter called the enantioselectivity value.</p>
 <p><strong>Literature Summary:</strong></p>
 <p>The paper discusses a methodology for predicting a property – in this case, the enantioselectivity - of the input protein based on just using its primary sequence. 
- This methodology involves using a Digital Signal Processing Technique called innov’SAR , which is a protein structure independent method. First , the protein sequences are converted into spectrums via amino acid index encoding and Fourier Transform
-These spectrums, are supposed to capture epistatic interactions between the different mutants. The converted inputs are used to design a ML model , which will in turn predict e-values for each of the inputs. The overall goal is to reduce the time spent in order to study the activity of newly designed proteins.</p>
+ This methodology involves using a Digital Signal Processing Technique called innov’SAR , which is a protein structure independent method. First , the protein sequences are converted into spectrums via amino acid index encoding and Fourier Transform.
+These spectrums are supposed to capture epistatic interactions between the different mutants. The converted inputs are used to design a ML model , which will in turn predict e-values for each of the inputs. The overall goal is to reduce the time spent in studying the activity of newly designed proteins.</p>
 <p>The authors have already explored and established certain models and parameters for the task at hand. My objective is to try some alternative machine learning models and data manipulations on the same problem and obtain some insights of my own.</p>
 <p><strong>The primary steps involved are as follows:</strong></p>
 <blockquote><p>Converting the alphabetical amino-acid sequences into a sequence consisting of their respective amino acid indexes.</p>
 <p>Using Fourier Transform to obtain information embedded in the converted sequences. This will serve as one of the inputs, with the other being the non-Fourier transformed sequence.</p>
-<p>Using these as input in different Machine Learning models , hoping to capture a relationship between the inputs and the value we are trying to predict- The E-value.</p>
+<p>Using these as input in different Machine Learning models , hoping to capture a relationship between the inputs and the ground truth we are trying to predict- The E-value.</p>
 </blockquote>
 <p><strong>Epistasis:</strong>
 Before we go into the specifics , I want to talk about an interesting concept in science called “Epistasis”. Epistasis occurs when the mutation at a certain point in the gene is affected by a mutation at another site. As you will all see, the dataset we are dealing with consists of different mutants ( single and multi-point ) of epoxide hydrolase from Aspergillus Niger (ANEH). Hence , the model we design must be able to account for the epistatic interactions that may occur when we have multiple mutant samples. This is especially important when we want to predict the enantioselectivity unknown mutants, which may have multiple mutations at different sites.</p>
@@ -359,7 +359,7 @@ Before we go into the specifics , I want to talk about an interesting concept in
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>As we can see, the Sequence column contains the protein sequences found in the training dataset. The ground truth we are dealing with here is the converted value called Free Energy (G).</p>
+<p>As we can see, the Sequence column contains the protein sequences found in the training dataset. The ground truth we are dealing with here is a converted value called Free Energy (G).</p>
 <p>Formula:</p>
 <p>ΔΔG‡=−RT ln (E)</p>
 <p>Where E is the enantioselectivity</p>
@@ -1887,7 +1887,7 @@ Name: G, dtype: float64
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>From the above results, we can quite confidently say that for a linear model , the numerical value assigned to each amino acid doesnt really impact the model. Thus, this model doesnt capture epistasis.</strong></p>
+<p><strong>From the above results, we can quite confidently say that for a linear model , the numerical value assigned to each amino acid doesn't really impact the model. Thus, this model doesn't capture epistasis.</strong></p>
 
 </div>
 </div>
