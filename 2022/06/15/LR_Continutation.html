@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -127,7 +127,7 @@ window.onload = wrap_img;
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Multi-peptide-mutants-in-training-set">Multi-peptide mutants in training set<a class="anchor-link" href="#Multi-peptide-mutants-in-training-set"> </a></h2><blockquote><p><strong>What if we incorporate the multi-mutants in the training set - can we catch the epistatic interactions?</strong></p>
+<h2 id="Multi-Amino-Acid-mutants-in-training-set">Multi-Amino Acid mutants in training set<a class="anchor-link" href="#Multi-Amino-Acid-mutants-in-training-set"> </a></h2><blockquote><p><strong>What if we incorporate the multi-mutants in the training set - can we catch the epistatic interactions?</strong></p>
 </blockquote>
 <p>For this, we will created a mixed dataset consisting of 19 point training dataset(switched over from the test set) and 19 point test dataset.</p>
 
@@ -329,6 +329,13 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Training Score:</p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -362,6 +369,13 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Predictions:</p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -397,6 +411,13 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Test Score:</p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -428,6 +449,13 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Pearson Correlation Co-efficient:</p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -511,7 +539,7 @@ window.onload = wrap_img;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>The r2 scores seem quite indentical when compared to the unmixed dataset Linear Regression Model. But, that probably isn't the best indicator for measuring this model</strong></p>
+<p><strong>The r2 scores seem quite identical when compared to the unmixed dataset Linear Regression Model. But, that probably isn't the best indicator for measuring this model</strong></p>
 
 </div>
 </div>
@@ -734,7 +762,7 @@ window.onload = wrap_img;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can see that though some negative epistatic interactions are getting predicted, none of the postive interactions are.</p>
+<p>We can see that though some negative epistatic interactions are getting predicted, none of the postive interactions are. This leads us to explore some other models which might do a better job when it comes to predicting the correct epistatic state.</p>
 
 </div>
 </div>
