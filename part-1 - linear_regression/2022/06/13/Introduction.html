@@ -176,18 +176,18 @@ So, the challenge lies in being able to manipulate only the sequence data – pr
 </h3>
 <p>The paper discusses a methodology for predicting a property – in this case, the enantioselectivity - of the input protein based on just using its primary sequence. 
  This methodology involves using a Digital Signal Processing Technique called innov’SAR , which is a protein structure independent method. First , the protein sequences are converted into spectrums via amino acid index encoding and Fourier Transform.
-These spectrums are supposed to capture epistatic interactions between the different mutants. The converted inputs are used to design a ML model , which will in turn predict e-values for each of the inputs. The overall goal is to reduce the time spent in studying the activity of newly designed proteins.</p>
+These spectrums are supposed to capture epistatic interactions between the different mutations. The converted inputs are used to design a ML model , which will in turn predict e-values for each of the inputs. The overall goal of this undertaking is to reduce the time spent in studying the activity of newly designed proteins by predicting the activity directly from its sequence.</p>
 <p>The authors have already explored and established certain models and parameters for the task at hand. My objective is to try some alternative machine learning models and data manipulations on the same problem and obtain some insights of my own.</p>
 <p><strong>The primary steps involved are as follows:</strong></p>
 <blockquote>
-<p>Converting the alphabetical amino-acid sequences into a sequence consisting of their respective amino acid indexes.</p>
-<p>Using Fourier Transform to obtain information embedded in the converted sequences. This will serve as one of the inputs, with the other being the non-Fourier transformed sequence.</p>
-<p>Using these as input in different Machine Learning models , hoping to capture a relationship between the inputs and the ground truth we are trying to predict- The E-value.</p>
+<p>Converting the alphabetical amino-acid sequences into sequences consisting of their respective amino acid indexes.</p>
+<p>Using Fourier Transform to obtain information embedded in the converted sequences.</p>
+<p>Using these as input in different Machine Learning models , hoping to capture a relationship between the inputs and the ground truth we are trying to predict - in this case , the E-value.</p>
 </blockquote>
 <h3 id="Epistasis:">
 <a class="anchor" href="#Epistasis:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Epistasis:<a class="anchor-link" href="#Epistasis:"> </a>
 </h3>
-<p>Before we go into the specifics , I want to talk about an interesting concept in science called “Epistasis”. Epistasis occurs when the mutation at a certain point in the gene is affected by a mutation at another site. As you will all see, the dataset we are dealing with consists of different mutants ( single and multi-point ) of epoxide hydrolase from Aspergillus Niger (ANEH). Hence , the model we design must be able to account for the epistatic interactions that may occur when we have multiple mutant samples. This is especially important when we want to predict the enantioselectivity unknown mutants, which may have multiple mutations at different sites.</p>
+<p>Before we go into the specifics , I want to talk about an interesting concept called “Epistasis”. Epistasis occurs when the mutation at a certain point in the gene is affected by a mutation at another site. As you will all see, the dataset we are dealing with consists of different mutants ( single and multi-point ) of epoxide hydrolase from Aspergillus Niger (ANEH). Hence , the model we design must be able to account for the epistatic interactions that may occur when we have a sample with mutations at multiple sites. This is especially important when we want to predict the enantioselectivity of unknown mutants.</p>
 <h3 id="Data-Modelling:">
 <a class="anchor" href="#Data-Modelling:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data Modelling:<a class="anchor-link" href="#Data-Modelling:"> </a>
 </h3>
@@ -195,14 +195,15 @@ These spectrums are supposed to capture epistatic interactions between the diffe
 <h3 id="Amino-Acid-Indexes:">
 <a class="anchor" href="#Amino-Acid-Indexes:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Amino Acid Indexes:<a class="anchor-link" href="#Amino-Acid-Indexes:"> </a>
 </h3>
-<p>The first step involves converting the alphabetical sequences of the inputs into a numerical form which is suitable for use in a machine learning model. For this purpose, we are going to use amino acid indexes. Amino Acid indexes are numerical quantities we assign to each amino acid based on the physical or chemical characteristic we are dealing with ( AAindex: Amino Acid index database ). In this project, I will be trying a variety of AA indexes and comparing their performance in each modelling scenario.</p>
+<p>The first step involves converting the alphabetical sequences of the inputs into a numerical form which is suitable for use in a machine learning model. For this purpose, we are going to use amino acid indexes. 
+Amino Acid indexes are numerical quantities we assign to each amino acid; it is based on the physical or chemical characteristic we are dealing with ( AAindex: Amino Acid index database ). In this project, I will be trying a variety of AA indexes and comparing their performance in each modelling scenario.</p>
 <h3 id="Machine-Learning-Models:">
 <a class="anchor" href="#Machine-Learning-Models:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Machine Learning Models:<a class="anchor-link" href="#Machine-Learning-Models:"> </a>
 </h3>
 <p>It should be obvious that the task at hand requires us to predict a continuous value , making this a regression problem. Keeping this is mind , we will focus on the performance of 2 ML regression models:</p>
 <ol>
 <li>
-<p>Linear Regression – Closed Form</p>
+<p>Linear Regression</p>
 </li>
 <li>
 <p>Support Vector Regression</p>
@@ -2018,7 +2019,7 @@ Name: G, dtype: float64
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>From the above results, we can quite confidently say that for a linear model , the numerical value assigned to each amino acid doesn't really impact the model. Thus, this model doesn't capture epistasis.</strong></p>
+<p><strong>From the above results, we can quite confidently say that for a simple linear model , the numerical value assigned to each amino acid doesn't really impact the model. Thus, this model doesn't help us capture epistasis.</strong></p>
 
 </div>
 </div>
