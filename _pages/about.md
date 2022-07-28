@@ -7,7 +7,7 @@ permalink: /about/
 <h1 align="center"> ASHWATH SREERAM </h1>
 <h2 align="center">No 9, 9th Cross Street, Shastri Nagar, Adyar, Chennai - 20 · +91 9940194789</h2>
 <h2 align="center">ashwathsreeram@gmail.com</h2> 
-
+</header>
 
 ### Work Experience :
 
