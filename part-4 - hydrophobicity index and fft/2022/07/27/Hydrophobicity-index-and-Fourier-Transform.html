@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      8 min read
+      9 min read
     
 </span></p>
 
@@ -130,7 +130,11 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Trying-Fourier-Transform:">Trying Fourier Transform: </a></li>
 <li class="toc-entry toc-h2"><a href="#Iterative-Regression-for-Simple-Linear-Regression">Iterative Regression for Simple Linear Regression </a></li>
 <li class="toc-entry toc-h2"><a href="#Iterative-Regression-for-Fourier-Transform">Iterative Regression for Fourier Transform </a></li>
-<li class="toc-entry toc-h2"><a href="#SVM-with-Hydrophobicity-Fourier">SVM with Hydrophobicity Fourier </a></li>
+<li class="toc-entry toc-h2"><a href="#SVM-with-Hydrophobicity-Fourier">SVM with Hydrophobicity Fourier </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#Iterative-SVR-Regression-with-SVR">Iterative SVR Regression with SVR </a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h2"><a href="#Conclusion:">Conclusion: </a></li>
 </ul><!--
 #################################################
@@ -148,6 +152,7 @@ window.onload = wrap_img;
 <a class="anchor" href="#Alternate-AAindex---Hydrophobicity" aria-hidden="true"><span class="octicon octicon-link"></span></a>Alternate AAindex - Hydrophobicity<a class="anchor-link" href="#Alternate-AAindex---Hydrophobicity"> </a>
 </h2>
 <p>In this post, we will be trying an alternative AAindex - Amino Acid Index - called Hydrophobicity index and also look into incorporating Fourier Transform into the proceedings.</p>
+<p>The First Section will just be a repeat of the Data Engineering process already introduced in the previous sections of the blog, with the only edit being that we are using a different AAindex. So, please feel free to skip to the Linear Regression section.</p>
 
 </div>
 </div>
@@ -795,6 +800,14 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Default SVR</strong></p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -866,6 +879,14 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Test Score for the default SVR</strong></p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -897,6 +918,14 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>5 - Fold Cross Validation</strong></p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -1101,6 +1130,14 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Training Score for the polynomial kernel</strong></p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -1134,6 +1171,14 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Test Score for the polynomial kernel</strong></p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -1403,6 +1448,14 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Training Score for Linear Regression with FFT</strong></p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -1491,6 +1544,14 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Test Score for Linear Regression with FFT</strong></p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -1539,6 +1600,8 @@ window.onload = wrap_img;
 <h2 id="Iterative-Regression-for-Simple-Linear-Regression">
 <a class="anchor" href="#Iterative-Regression-for-Simple-Linear-Regression" aria-hidden="true"><span class="octicon octicon-link"></span></a>Iterative Regression for Simple Linear Regression<a class="anchor-link" href="#Iterative-Regression-for-Simple-Linear-Regression"> </a>
 </h2>
+<p>The interative process being followed here is an exact replica of the one shown in the interative regression section of the blog.</p>
+
 </div>
 </div>
 </div>
@@ -2112,6 +2175,15 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Iterative-SVR-Regression-with-SVR">
+<a class="anchor" href="#Iterative-SVR-Regression-with-SVR" aria-hidden="true"><span class="octicon octicon-link"></span></a>Iterative SVR Regression with SVR<a class="anchor-link" href="#Iterative-SVR-Regression-with-SVR"> </a>
+</h4>
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -2239,6 +2311,14 @@ window.onload = wrap_img;
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>SVR gives us much more promising results when in tandem with FFT</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Now, lets test it on the original train and test dataset split</strong></p>
 
 </div>
 </div>
