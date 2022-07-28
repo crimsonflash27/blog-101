@@ -87,7 +87,7 @@ permalink: /about/
 	<b>MAY 2019</b>
 
 	<h6>BACHELOR OF TECHNOLOGY IN INDUSTRIAL BIOTECHNOLOGY, ANNA UNIVERSITY</h6>
-	
+
 	<b>GPA:</b> 7.13
 	</p>
 	
@@ -113,7 +113,7 @@ permalink: /about/
 <br>
 <br>
 
-<h3>Project in Data Science and AI:</h3>
+<h3>Project in Data Science and AI</h3>
 
 	<h4>Project Title: Video Quality Assessment using Vision Transformers</h4>
 
@@ -126,7 +126,7 @@ permalink: /about/
 <br>
 <br>
 
-<h3>Other Certifications:</h3>
+<h3>Other Certifications</h3>
 
 <ol>
 
