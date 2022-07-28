@@ -23,7 +23,7 @@ permalink: /about/
 <br>
 
 
-	<h4>MAY 2021 – JULY 2021</h4>
+	<h4><b>MAY 2021 – JULY 2021</b></h4>
 	
 	<h4><b>INTERN, EJYLE TECHNOLOGIES (P) LTD. IND</b></h4>
 	<p>The internship experience at Ejyle gave me an opportunity to build on my practical experience with programming using Python and R.</p> 
@@ -70,13 +70,13 @@ permalink: /about/
 
 
 	<b>JULY 2020</b>
-	<h5>MASTER OF SCIENCE IN BIOLOGY, UNIVERSITY OF ALABAMA AT BIRMINGHAM</h5>
+	<h6>MASTER OF SCIENCE IN BIOLOGY, UNIVERSITY OF ALABAMA AT BIRMINGHAM</h6>
 	<b>GPA:</b> 3.7
 
-
+<br>
 
 	<b>MAY 2019</b>
-	<h5>BACHELOR OF TECHNOLOGY IN INDUSTRIAL BIOTECHNOLOGY, ANNA UNIVERSITY</h5>
+	<h6>BACHELOR OF TECHNOLOGY IN INDUSTRIAL BIOTECHNOLOGY, ANNA UNIVERSITY</h6>
 	<b>GPA:</b> 7.13
 
 	
