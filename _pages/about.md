@@ -1,9 +1,10 @@
 ---
 layout: page
-title: about me
+title: About me
 permalink: /about/
 ---
 <header>
+<br>
 <h1 align="center"> ASHWATH SREERAM </h1>
 <h3 align="center">No 9, 9th Cross Street, Shastri Nagar, Adyar, Chennai - 20 · +91 9940194789</h3>
 <h3 align="center">ashwathsreeram@gmail.com</h3> 
@@ -11,7 +12,9 @@ permalink: /about/
 
 <body>
 
-<h3 align="center">Work Experience </h3>
+<br>
+
+<h3>Work Experience </h3>
 
 
 	<h4><b>JANUARY 2022 – PRESENT</b></h4>
@@ -67,28 +70,28 @@ permalink: /about/
 
 
 
-<h3 align ="center">Education</h3>
+<h3>Education</h3>
 
-	<p>
+	
 	<b>JULY 2020</b>
-	<h6>MASTER OF SCIENCE IN BIOLOGY, UNIVERSITY OF ALABAMA AT BIRMINGHAM</h6>
+	<b>MASTER OF SCIENCE IN BIOLOGY, UNIVERSITY OF ALABAMA AT BIRMINGHAM</b>
 	<b>GPA:</b> 3.7
-	</p>
+	
 
 <br>
 	
-	<p>
+	
 	<b>MAY 2019</b>
 	<h6>BACHELOR OF TECHNOLOGY IN INDUSTRIAL BIOTECHNOLOGY, ANNA UNIVERSITY</h6>
 	<b>GPA:</b> 7.13
-	</p>
+	
 
 	
 <br>
 <br>
 
 
-<h3 align="center">SKILLS:</h3>
+<h3>SKILLS</h3>
 
 <ol>
 
@@ -117,7 +120,7 @@ permalink: /about/
 <br>
 <br>
 
-<h3 align="center">Other Certifications:</h3>
+<h3>Other Certifications:</h3>
 
 <ol>
 
