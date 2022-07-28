@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Me
+title: 
 permalink: /about/
 ---
 <header>
@@ -62,26 +62,34 @@ permalink: /about/
 	</ol>
 
 <br>
+<br>
 	
 
 
 
 <h3>Education:</h3>
 
-
+	<p>
 	<b>JULY 2020</b>
+	<br>
 	<h6>MASTER OF SCIENCE IN BIOLOGY, UNIVERSITY OF ALABAMA AT BIRMINGHAM</h6>
+	<br>
 	<b>GPA:</b> 3.7
+	</p>
 
 <br>
-
+	
+	<p>
 	<b>MAY 2019</b>
+	<br>
 	<h6>BACHELOR OF TECHNOLOGY IN INDUSTRIAL BIOTECHNOLOGY, ANNA UNIVERSITY</h6>
+	<br>
 	<b>GPA:</b> 7.13
+	</p>
 
 	
 <br>
-
+<br>
 
 
 <h3>SKILLS:</h3>
@@ -97,6 +105,8 @@ permalink: /about/
 
 </ol>
 
+<br>
+<br>
 
 <h3>Project in Data Science and AI:</h3>
 
@@ -107,6 +117,9 @@ permalink: /about/
 	We utilized a pre-trained vision transformer model - trained on Image Net 1K dataset – to extract features from videos to predict video quality.  
 	The extracted features were passed through trained Support Vector Regression model for predicting Mos (Mean Opinion Score) score, which is used as a metric for assessing video quality. 
 </p>
+
+<br>
+<br>
 
 <h3>Other Certifications:</h3>
 
