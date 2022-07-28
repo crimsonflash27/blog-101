@@ -3,17 +3,19 @@ layout: page
 title: About Me
 permalink: /about/
 ---
-
-#                                          ASHWATH SREERAM
-##               No 9, 9th Cross Street, Shastri Nagar, Adyar, Chennai - 20 · +91 9940194789
-##                                     ashwathsreeram@gmail.com 
+<header>
+<h1 align="center"> ASHWATH SREERAM </h1>
+<h2 align="center">No 9, 9th Cross Street, Shastri Nagar, Adyar, Chennai - 20 · +91 9940194789</h2>
+<h2 align="center">ashwathsreeram@gmail.com</h2> 
 
 
 ### Work Experience :
 
 	JANUARY 2022 – PRESENT
 	PROJECT INTERN, IIT HYDERABAD 
-	I am working on projects involving utilization of different Machine Learning models to solve problems in the domain of biology. Currently, I am exploring avenues to utilize the primary sequence of proteins in order to predict vital bio-chemical characteristics. The project is headed by Dr. Sumohana Channappayya, Associate Professor, Department of Electrical Engineering, IIT Hyderabad.
+	I am working on projects involving utilization of different Machine Learning models to solve problems in the domain of biology.  
+	Currently, I am exploring avenues to utilize the primary sequence of proteins in order to predict vital bio-chemical characteristics.  
+	The project is headed by Dr. Sumohana Channappayya, Associate Professor, Department of Electrical Engineering, IIT Hyderabad.
 
 
 
@@ -33,10 +35,16 @@ permalink: /about/
 	DATA ANALYST, HEALTHSOFT MIDDLE EAST. UAE
 	During my tenure at Healthsoft Middle East, I worked with a team involved in conducting Medical Audits for the largest government payer in the UAE. 
 	Chief Responsibilities: 
-		1. Trend Analysis of provider data. 
-		2. Sampling methodologies for sampling of claims data to detect non-compliance. 
-		3. Created Visual Dashboards using the data obtained from the medical audit. Dashboards created for each individual provider, containing data which will be used by payer for evaluating the compliance of the provider. 
-		4. Co-ordinating with the payer and audit team in order to submit timely Audit Status Reports, Provider-Wise Audit Report and Audit Recovery report. For this purpose, I served as a communication bridge between the Chief Auditor and the payer team. 
+		1. Trend Analysis of provider data.  
+
+		2. Sampling methodologies for sampling of claims data to detect non-compliance.  
+
+		3. Created Visual Dashboards using the data obtained from the medical audit.    
+		Dashboards created for each individual provider, containing data which will be used by payer for evaluating the compliance of the provider.  
+
+		4. Co-ordinating with the payer and audit team in order to submit timely Audit Status Reports, Provider-Wise Audit Report and Audit Recovery report.    
+		For this purpose, I served as a communication bridge between the Chief Auditor and the payer team.  
+
 		5. Extensive troubleshooting involving consolidation of audit findings from multiple auditors and issues relating to data duplication and data errors. 
 
 
@@ -66,7 +74,9 @@ permalink: /about/
 
 	Project Title: Video Quality Assessment using Vision Transformers
 
-	Project was a part of the Artificial Intelligence and Emerging Technologies course conducted at IIT Hyderabad. We utilized a pre-trained vision transformer model - trained on Image Net 1K dataset – to extract features from videos to predict video quality. The extracted features were passed through trained Support Vector Regression model for predicting Mos (Mean Opinion Score) score, which is used as a metric for assessing video quality. 
+	Project was a part of the Artificial Intelligence and Emerging Technologies course conducted at IIT Hyderabad.  
+	We utilized a pre-trained vision transformer model - trained on Image Net 1K dataset – to extract features from videos to predict video quality.  
+	The extracted features were passed through trained Support Vector Regression model for predicting Mos (Mean Opinion Score) score, which is used as a metric for assessing video quality. 
 
 
 ### Other Certifications:
