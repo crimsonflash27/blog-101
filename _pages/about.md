@@ -14,20 +14,19 @@ permalink: /about/
 <h3>Work Experience :</h3>
 
 
-	<h4>JANUARY 2022 – PRESENT</h4>
-	<br>
-	<h4>PROJECT INTERN, IIT HYDERABAD</h4> 
+	<h4><b>JANUARY 2022 – PRESENT</b></h4>
+	<h4><b>PROJECT INTERN, IIT HYDERABAD</b></h4> 
 	<p>I am working on projects involving utilization of different Machine Learning models to solve problems in the domain of biology.  
 	Currently, I am exploring avenues to utilize the primary sequence of proteins in order to predict vital bio-chemical characteristics.  
 	The project is headed by Dr. Sumohana Channappayya, Associate Professor, Department of Electrical Engineering, IIT Hyderabad.</p>
 
+<br>
 
 
 	<h4>MAY 2021 – JULY 2021</h4>
-	<br>
-	<h4>INTERN, EJYLE TECHNOLOGIES (P) LTD. IND</h4>
+	
+	<h4><b>INTERN, EJYLE TECHNOLOGIES (P) LTD. IND</b></h4>
 	<p>The internship experience at Ejyle gave me an opportunity to build on my practical experience with programming using Python and R.</p> 
-	<br>
 	<h5>Projects:</h5> 
 
 	<ol>
@@ -39,11 +38,11 @@ permalink: /about/
 	</ol>
 
 
+<br>
 
 
-
-	<h4>AUGUST 2020 – APRIL 2021</h4>
-	<h4>DATA ANALYST, HEALTHSOFT MIDDLE EAST. UAE</h4>
+	<h4><b>AUGUST 2020 – APRIL 2021</b></h4>
+	<h4><b>DATA ANALYST, HEALTHSOFT MIDDLE EAST. UAE</b></h4>
 	<p>During my tenure at Healthsoft Middle East, I worked with a team involved in conducting Medical Audits for the largest government payer in the UAE.</p> 
 	<h5>Chief Responsibilities:</h5>
 	<ol>
@@ -61,6 +60,8 @@ permalink: /about/
 
 		<li> Extensive troubleshooting involving consolidation of audit findings from multiple auditors and issues relating to data duplication and data errors. </li>
 	</ol>
+
+<br>
 	
 
 
@@ -68,22 +69,21 @@ permalink: /about/
 <h3>Education:</h3>
 
 
-	<b>JULY 2020<b>
-
+	<b>JULY 2020</b>
 	<h5>MASTER OF SCIENCE IN BIOLOGY, UNIVERSITY OF ALABAMA AT BIRMINGHAM</h5>
-	
 	<b>GPA:</b> 3.7
 
-<br>
-<br>
+
 
 	<b>MAY 2019</b>
-	
 	<h5>BACHELOR OF TECHNOLOGY IN INDUSTRIAL BIOTECHNOLOGY, ANNA UNIVERSITY</h5>
-	
 	<b>GPA:</b> 7.13
 
 	
+<br>
+
+
+
 <h3>SKILLS:</h3>
 
 <ol>
