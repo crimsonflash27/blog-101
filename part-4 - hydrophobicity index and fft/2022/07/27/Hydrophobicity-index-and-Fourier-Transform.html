@@ -132,7 +132,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Iterative-Regression-for-Fourier-Transform">Iterative Regression for Fourier Transform </a></li>
 <li class="toc-entry toc-h2"><a href="#SVM-with-Hydrophobicity-Fourier">SVM with Hydrophobicity Fourier </a>
 <ul>
-<li class="toc-entry toc-h4"><a href="#Iterative-SVR-Regression-with-SVR">Iterative SVR Regression with SVR </a></li>
+<li class="toc-entry toc-h4"><a href="#Iterative-SVR-Regression">Iterative SVR Regression </a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#Conclusion:">Conclusion: </a></li>
@@ -744,7 +744,7 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>As promised, i did try the same simple linear regression model with another AAindex and we get results similar to the one we obtained with the EIIP AAindex and the One-Hot model. This trend continues throughout for the simple linear regression model, and hence we will not be considering it for our task.</p>
+<p>As promised, i did try the same simple linear regression model with another AAindex and we get results similar to the one we obtained with the EIIP AAindex and the One-Hot model. This trend continues throughout for the closed form linear regression model, and hence we will not be considering it for our task.</p>
 
 </div>
 </div>
@@ -1262,7 +1262,7 @@ window.onload = wrap_img;
 <h2 id="Trying-Fourier-Transform:">
 <a class="anchor" href="#Trying-Fourier-Transform:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Trying Fourier Transform:<a class="anchor-link" href="#Trying-Fourier-Transform:"> </a>
 </h2>
-<p>The main objective for performing Fourier Transform is to introduce a method that can help capture epistasis. The crux of Fourier Transform is its ability to turn the numerical sequence into a spectrum. The spectrum created by the method will vary entirely if even one amino acid is replace by another, capturing the impact of the mutation on a global level.</p>
+<p>The main objective for performing Fourier Transform is to introduce a method that can help capture epistasis. The crux of Fourier Transform is its ability to turn the numerical sequence into a spectrum. The spectrum created by the method will vary entirely if even one amino acid is replace by another, thus capturing the impact of the mutation on a global level.</p>
 
 </div>
 </div>
@@ -1270,7 +1270,7 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We will be using the fft package in Scientific Python - Scipy.</p>
+<p>We will be using the fft package in Scientific Python(Scipy).</p>
 
 </div>
 </div>
@@ -2178,8 +2178,8 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Iterative-SVR-Regression-with-SVR">
-<a class="anchor" href="#Iterative-SVR-Regression-with-SVR" aria-hidden="true"><span class="octicon octicon-link"></span></a>Iterative SVR Regression with SVR<a class="anchor-link" href="#Iterative-SVR-Regression-with-SVR"> </a>
+<h4 id="Iterative-SVR-Regression">
+<a class="anchor" href="#Iterative-SVR-Regression" aria-hidden="true"><span class="octicon octicon-link"></span></a>Iterative SVR Regression<a class="anchor-link" href="#Iterative-SVR-Regression"> </a>
 </h4>
 </div>
 </div>
